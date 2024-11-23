@@ -23,6 +23,7 @@ html {
 .page {
   display: flex;
   justify-content: center;
+  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -258,7 +259,6 @@ ol {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
   gap: 26px;
 }
 
