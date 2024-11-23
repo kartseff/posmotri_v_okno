@@ -23,7 +23,6 @@ html {
 .page {
   display: flex;
   justify-content: center;
-  align-items: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -37,7 +36,7 @@ html {
   display: flex;
   align-items: end;
   width: 1140px;
-  height: 534px;
+  margin: 133px 30px;
   gap: 30px;
 }
 
@@ -67,7 +66,6 @@ ol {
   margin-bottom: 16px;
   width: 711px;
   height: 386px;
-  overflow: hidden;
 }
 
 .result__video {
@@ -89,6 +87,7 @@ ol {
 .search-form__fieldset {
   display: flex;
   flex-direction: column;
+  border: none;
   gap: 5px;
 }
 
@@ -97,10 +96,6 @@ ol {
   font-size: 18px;
   font-weight: 400;
   line-height: 21.6px;
-}
-
-.search-form__fieldset {
-  border: none;
 }
 
 .search-form__label {
@@ -270,6 +265,8 @@ ol {
 .content__list {
   position: relative;
   overflow-y: scroll;
+  width: 399px;
+  height: 298px;
 }
 
 .content__video-card {
@@ -279,7 +276,7 @@ ol {
   padding: 2px 0 2px 2px;
 }
 
-li:not(:nth-last-child(-n+1)) {
+.content__list-item:not(:nth-last-child(-n+1)) {
   margin-bottom: 30px;
 }
 
@@ -342,10 +339,10 @@ li:not(:nth-last-child(-n+1)) {
 /*превью варианта видео*/
 
 .content__video-card-thumbnail {
-  object-fit: contain;
+  object-fit: cover;
+  object-position: center;
   width: 194px;
   height: 103px;
-  overflow: hidden;
 }
 
 /*активная карточка*/
