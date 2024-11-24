@@ -268,7 +268,7 @@ ol {
 .content__list {
   position: relative;
   overflow-y: auto;
-  width: 100%;
+  width: 534px;
   height: 298px;
 }
 
@@ -317,6 +317,10 @@ ol {
 }
 
 .content__video-card-title {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px; 
   font-family: Oswald, sans-serif;
   font-size: 30px;
   font-weight: 700;
